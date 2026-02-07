@@ -1,22 +1,18 @@
-import { DoorClosed, DoorOpen } from 'lucide-react-native';
+import { House } from 'lucide-react-native';
 import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
   return (
     <Tabs
         screenOptions={{
+            headerShown: false,
             tabBarActiveTintColor: 'gray',
-            headerStyle: {
-                backgroundColor: 'black',
-            },
-            headerShadowVisible: false,
-            headerTintColor: 'white',
             tabBarStyle: {
               backgroundColor: 'black',
             },
         }}>
       <Tabs.Screen name="index" options={{ title: 'Home', 
-        tabBarIcon: ({focused}) => (focused ? <DoorOpen color="#E8E8E8" size="20" /> : <DoorClosed color="#E8E8E8" size="20" />) 
+        tabBarIcon: () => <House color="white" size={20} /> 
         }}/>
     </Tabs>
   );
