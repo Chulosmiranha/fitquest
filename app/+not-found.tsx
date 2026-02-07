@@ -7,7 +7,7 @@ export default function NotFoundScreen() {
     <>
       <Stack.Screen options={{ title: 'My dad' }} />
       <SafeAreaView style={styles.container}>
-        <Text style={styles.text}> Looks like you found my dad a place that can't be found </Text>
+        <Text style={styles.text}> Looks like you found my dad and also a place that can't be found </Text>
         <Link href="./" style={styles.button}>
           Go back to Home screen!
         </Link>
